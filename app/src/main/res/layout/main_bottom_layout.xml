@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="30dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_time_cur"
+        android:text="1:52"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:layout_marginLeft="20dp"
+        android:textColor="#E1E1E1"
+        android:alpha="0.7"
+        android:textSize="12sp"/>
+
+    <ProgressBar
+        android:layout_width="0dp"
+        android:layout_height="2.5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/duration_processbar"
+        app:layout_constraintLeft_toRightOf="@id/text_time_cur"
+        app:layout_constraintRight_toLeftOf="@id/text_time_duration"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="7dp"
+        android:progressDrawable="@drawable/barcolor"
+        android:alpha="0.3"
+
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_time_duration"
+        android:text="3:20"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        android:textColor="#E1E1E1"
+        android:alpha="0.7"
+        android:textSize="12sp"/>
+
+
+    <ImageView
+        android:layout_width="@dimen/bottom_icon_small_size"
+        android:layout_height="@dimen/bottom_icon_small_size"
+        android:id="@+id/list_mode_view"
+        android:src="@drawable/list_recycle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/previous_song_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/duration_processbar"
+        android:layout_marginTop="@dimen/layout_bottom_margin_bar_buttons"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:layout_width="@dimen/bottom_icon_small_size"
+        android:layout_height="@dimen/bottom_icon_small_size"
+        android:id="@+id/previous_song_view"
+        android:src="@drawable/previous_song_icon"
+        app:layout_constraintLeft_toRightOf="@id/list_mode_view"
+        app:layout_constraintRight_toLeftOf="@id/status_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/duration_processbar"
+        android:layout_marginTop="@dimen/layout_bottom_margin_bar_buttons"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/status_view"
+        android:layout_width="@dimen/bottom_icon_big_size"
+        android:layout_height="@dimen/bottom_icon_big_size"
+        android:src="@drawable/play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/previous_song_view"
+        app:layout_constraintRight_toLeftOf="@id/next_song_view"
+        app:layout_constraintTop_toBottomOf="@id/duration_processbar"
+        android:layout_marginTop="@dimen/layout_bottom_margin_bar_buttons"
+         />
+
+    <ImageView
+        android:id="@+id/next_song_view"
+        android:layout_width="@dimen/bottom_icon_small_size"
+        android:layout_height="@dimen/bottom_icon_small_size"
+        android:src="@drawable/next_song_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/status_view"
+        app:layout_constraintRight_toLeftOf="@id/list_view"
+        app:layout_constraintTop_toBottomOf="@id/duration_processbar"
+        android:layout_marginTop="@dimen/layout_bottom_margin_bar_buttons"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:layout_width="@dimen/bottom_icon_small_size"
+        android:layout_height="@dimen/bottom_icon_small_size"
+        android:id="@+id/list_view"
+        android:src="@drawable/category"
+        app:layout_constraintLeft_toRightOf="@id/next_song_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/duration_processbar"
+        android:layout_marginTop="@dimen/layout_bottom_margin_bar_buttons"
+        android:layout_marginBottom="10dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

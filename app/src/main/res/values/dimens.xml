@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_icon_small_size">55sp</dimen>
+    <dimen name="bottom_icon_big_size">80sp</dimen>
+    <dimen name="layout_bottom_margin_bar_buttons">14dp</dimen>
+</resources>
